@@ -19,6 +19,7 @@ class ltcl_master implementation.
     data(structure) = ztcolab=>execute( ).
     cl_abap_unit_assert=>assert_equals( exp = 'Hello' act = structure-key ).
     cl_abap_unit_assert=>assert_equals( exp = 'TCOLAB' act = structure-value ).
+    ""
   endmethod.
 
   method setup.
